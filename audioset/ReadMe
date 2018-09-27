@@ -1,0 +1,26 @@
+
+To run the test code provided, please first set up a virtual environment, and ensure the following packages are installed:
+
+pip install import numpy
+pip install tensorflow-gpu > 1.8.0
+pip install scipy
+pip install sklearn
+pip install soundfile
+pip install librosa
+pip install matplotlib
+pip install pydub
+
+As the pretrained tensorflow model was too large for MMS, it has been uploaded to my Google Drive.
+Please download it from the following link, and save it into the 'audioset' folder found within this current directory.
+
+https://drive.google.com/drive/folders/1gNJXvdTqFVhAxVnuI_zqqaJzXi5av86w?usp=sharing
+
+Within this folder is the trained model, a sample testing set (in the form of a pickled object containing preprocessed audio MFCCs).
+It also contains some information from the training/validation phase, in order to produce some graphs of how it learnt.
+
+Finally, please navigate into the 'audioset' directory, and run the 'CNN_sound_effect' python script, using the following command:
+
+python ./CNN_sound_effect.py
+
+
+If there are any problems, please contact me at pmh20@st-andrews.ac.uk.
